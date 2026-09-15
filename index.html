@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang='tr'>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset='UTF-8'>
+  <style>
+   *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+    }
+
+    body{
+     background-color:#EEEEEF;
+    }
+
+   .navbar{
+      background-color:#FFFFFF;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      padding: 0 20px;
+      
+    }
+    
+    .hero-img{
+      width:600px;
+      height:500px;
+      object-fit:cover;
+      padding:20px 0px;
+      border-radius:8px;
+      box-shadow: 0 0 15px 10px #EEEEEF;
+      -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+ 
+      mask-image: radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+    }
+
+    h3{
+     color:#1A1A1A;
+     font-size:32px;
+     padding:15px 15px;
+     font-style:italic;
+   }
+
+    .nav-item{
+      text-decoration:none;
+      cursor:pointer;
+      font-size:27px;
+      color:#C41E3A;
+      font-style:italic;
+      padding:5px 15px;
+    }
+
+     .nav-item:hover{
+       color:#5B4B8A;
+       text-shadow:0 2px 8px rgba(196,30,58,0.25);
+    }
+
+    .container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:60px;
+      align-items:center;
+      padding:20px 20px;
+      margin-top:50px;
+    }
+
+    h1{
+      color:#1A1A1A;
+      text-shadow:5px 5px 5px gray;
+      font-size:45px;
+      padding:5px 0px;
+      font-style:italic;
+      animation-name:Slide;
+      animation-duration:3s;
+ 
+    }
+
+    @keyframes slide{
+      from{
+         opacity:0;
+         transform:translateX(-50px);
+         }
+      to{
+         opacity:1;
+         transform:translateX(0px);
+        }
+    }
+
+    @keyframes Slide{
+      from{
+         opacity:0;
+         transform:translateX(50px);
+         }
+      to{
+         opacity:1;
+         transform:translateX(0px);
+        }
+    }
+
+    @media(max-width:768px){
+       h1{
+        font-size:30px;
+        text-align:center;
+       }
+       .hero-image{
+         width:50%;
+         max-width:350px;
+         height:auto;
+       }
+    }
+  </style>
+ </head>
+ <body>
+  <nav>
+     <div class='navbar'>
+        <h3>Optikoz</h3>
+        <a href='#' class='nav-item'>Menü</a>
+        <a href='#' class='nav-item'>Ürünler</a>
+        <a href='#' class='nav-item'>Hakkımızda</a>
+        <a href='#' class='nav-item'>İletişim</a>
+     </div>
+   </nav>
+     <header>
+       <div class='container'>
+         <video autoplay muted playsinline class='hero-img'>
+         <source src='3.mp4'>
+          </video>
+         <h1>Sıradışılığı Bakışlarına Yansıt.</h1>
+       </div>
+     
+     </header>
+ </body>
+</html>
