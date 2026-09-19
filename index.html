@@ -106,7 +106,7 @@
     .slide-track{
       animation:SLIDE 50s linear infinite;
       display:flex;
-      overflow:hidden;
+      width:max-content;
       justify-content:center;
       gap:20px;
       
@@ -114,6 +114,12 @@
 
    .slide-track:hover{
     animation-play-state:paused;
+   }
+
+   .slide-track-container{
+    overflow:hidden;
+    width:100%;
+    padding:20px 0;
    }
 
     @keyframes SLIDE{
@@ -182,6 +188,7 @@
      
      </header>
      <section id="b1">
+      <div class='slide-track-container'>
        <div class="slide-track">
          <img src="2.jpg" class="urun">
          <img src="2.jpg" class="urun">
@@ -197,6 +204,7 @@
          <img src="2.jpg" class="urun">
          <img src="2.jpg" class="urun">
        </div>
+      </div>
      </section>
  </body>
 </html>
