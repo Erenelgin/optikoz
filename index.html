@@ -205,5 +205,22 @@
        </div>
       </div>
      </section>
+   <script>
+      let online = false;
+      let username;
+      let pass;
+
+      while(!online){
+        username = window.prompt('Kullanıcı adı giriniz');
+        pass = window.prompt('Şifre giriniz');
+
+        if(username == "admin" && pass == "Ruhi123"){
+         online = true;
+        }
+       else{
+          console.log('giriş yapılamadı');
+       }
+      }
+   </script>
  </body>
 </html>
