@@ -121,6 +121,13 @@
     padding:20px 0;
    }
 
+   form{
+    text-align:center;
+    padding:12px 12px;
+    border:9px solid black;
+    border-radius:9px;
+   }
+
     @keyframes SLIDE{
       0%{transform:translateX(0);}
       100%{transform:translateX(calc(-50% - 10px));}
@@ -205,6 +212,19 @@
        </div>
       </div>
      </section>
+    <section class='FORM'>
+      <div class='container'>
+         <form>
+            <input type='email' placeholder='e-mail:' class='form-item' required >
+            <br>
+            <input type='password' placeholder='şifre:' class='form-item' required >
+            <br>
+            <textarea placeholder='Mesaj' required></textarea>
+            <br>
+            <button type='submit' placeholder='GÖNDER'></button>
+         </form>
+      </div>
+    </section>
    <script>
       let online = false;
       let username;
@@ -218,7 +238,7 @@
          online = true;
         }
        else{
-          console.log('giriş yapılamadı');
+          window.alert('giriş yapılamadı, tekrar deneyin');
        }
       }
    </script>
