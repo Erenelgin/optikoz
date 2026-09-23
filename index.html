@@ -124,8 +124,16 @@
    form{
     text-align:center;
     padding:12px 12px;
-    border:9px solid black;
+    border:3px solid black;
     border-radius:9px;
+    height:280px;
+    width:260px;
+   }
+
+   .form-item{
+     padding:10px 10px;
+     border-radius:9px;
+     cursor:pointer;
    }
 
     @keyframes SLIDE{
@@ -215,13 +223,15 @@
     <section class='FORM'>
       <div class='container'>
          <form>
+            <h4>İLETİŞİM</h4>
+            <br>
             <input type='email' placeholder='e-mail:' class='form-item' required >
             <br>
             <input type='password' placeholder='şifre:' class='form-item' required >
             <br>
             <textarea placeholder='Mesaj' required></textarea>
             <br>
-            <button type='submit' placeholder='GÖNDER'></button>
+            <button type='submit'>Gönder</button>
          </form>
       </div>
     </section>
